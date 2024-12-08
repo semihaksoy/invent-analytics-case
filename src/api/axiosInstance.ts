@@ -7,7 +7,7 @@ if (!API_KEY) {
 }
 
 const axiosInstance = axios.create({
-    baseURL: "http://www.omdbapi.com/",
+    baseURL: "https://www.omdbapi.com/",
     timeout: 10000,
     headers: {
         "Content-Type": "application/json",
