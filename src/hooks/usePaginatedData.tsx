@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect } from "react";
 import type { Movie, MovieResponse } from "../types/api/movies.types";
 
 interface UsePaginatedDataOptions {
