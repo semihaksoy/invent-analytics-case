@@ -1,4 +1,4 @@
-import { Pagination, Table } from "antd";
+import { Flex, Pagination, Table } from "antd";
 import type { Movie } from "../../types/api/movies.types";
 import styles from "./TableComponent.module.scss";
 
@@ -37,13 +37,15 @@ const TableComponent: React.FC<TableComponentProps> = ({
         rowClassName={styles.cursorPointer}
       />
       {showPagination && (
-        <Pagination
-          total={totalResults}
-          current={currentPage}
-          onChange={onPageChange}
-          showSizeChanger={false}
-          className="mt-20 ta-center"
-        />
+        <Flex justify="center">
+          <Pagination
+            total={totalResults || 0}
+            current={currentPage}
+            onChange={onPageChange}
+            showSizeChanger={false}
+            className="mt-20 ta-center"
+          />
+        </Flex>
       )}
     </div>
   );
