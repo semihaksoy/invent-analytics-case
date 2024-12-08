@@ -1,0 +1,102 @@
+/* Margin Classes Start */
+$margin-sizes: (
+	8: 8px,
+	12: 12px,
+	16: 16px,
+	20: 20px,
+	24: 24px,
+	28: 28px,
+	32: 32px
+	
+);
+
+@each $size, $value in $margin-sizes {
+  .mt-#{$size} { margin-top: $value; }
+  .mb-#{$size} { margin-bottom: $value; }
+  .ml-#{$size} { margin-left: $value; }
+  .mr-#{$size} { margin-right: $value; }
+  .m-#{$size} { margin: $value; }
+}
+
+/* Margin Classes End */
+
+/* Text Align Variables Start */
+$text-align-left: left;
+$text-align-center: center;
+$text-align-right: right;
+$text-align-justify: justify;
+
+.ta-left {
+	text-align: $text-align-left;
+}
+
+.ta-center {
+	text-align: $text-align-center;
+}
+
+.ta-right {
+	text-align: $text-align-right;
+}
+
+.ta-justify {
+	text-align: $text-align-justify;
+}
+/* Text Align Variables End */
+
+/* Width Classes Start */
+$width-25: 25%;
+$width-50: 50%;
+$width-75: 75%;
+$width-100: 100%;
+.w-25 {
+	width: $width-25;
+}
+
+.w-50 {
+	width: $width-50;
+}
+
+.w-75 {
+	width: $width-75;
+}
+
+.w-100 {
+	width: $width-100;
+}
+/* Width Classes End */
+
+/* Height Classes Start */
+$height-50: 50%;
+$height-75: 75%;
+$height-100: 100%;
+.h-50 {
+	height: $height-50;
+}
+
+.h-75 {
+	height: $height-75;
+}
+
+.h-100 {
+	height: $height-100;
+}
+/* Height Classes End */
+
+
+
+/* Select Start */
+$width-medium: 120px;
+$width-large: 160px;
+$width-xlarge: 200px;
+.w-medium {
+	width: $width-medium;
+}
+
+.w-large {
+	width: $width-large;
+}
+
+.w-xlarge {
+	width: $width-xlarge;
+}
+/* Select End */
